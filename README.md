@@ -1,12 +1,12 @@
 # CKA-K8S
 
-Application Lifecycle Management 8% 
-Installation, Configuration & Validation 12%
-Core Concepts 19%
-Networking 11%
-Scheduling 5%
-Security 12%
-Cluster Maintenance 11%
-Logging / Monitoring 5%
-Storage 7%
+Core Concepts 19%  
+Scheduling 5%                       
+Logging / Monitoring 5%                               
+Application Lifecycle Management 8%             
+Cluster Maintenance 11%    
+Security 12%                        
+Storage 7%              
+Networking 11%                    
+Installation, Configuration & Validation 12%           
 Troubleshooting 10%
