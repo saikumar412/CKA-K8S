@@ -1,6 +1,6 @@
 # CKA-K8S
 
-Application Lifecycle Management 8%
+Application Lifecycle Management 8% 
 Installation, Configuration & Validation 12%
 Core Concepts 19%
 Networking 11%
