@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: DaemonSet
+metadata: 
+  name: elk 
+  namespace: kube-system
+spec: 
+  selector:
+    matchLabels:
+      app: elk
+  template: 
+    metadata:
+      labels:
+        app: elk
+      spec:
+       containers: 
+       - name: elk
+         image: image-from-elk
+
+kubectl get daemonsets --all-namespaces
+
+kubectl get daemonsets --namespace=your-name-space
