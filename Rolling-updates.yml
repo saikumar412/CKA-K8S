@@ -1,0 +1,11 @@
+create kubectl create -f deployment-definition.yaml
+
+Get    kubectl get deployments
+
+Update kubectl apply -f deployment-definition.yaml
+       kubectl set image deployment/myapp-deployment nodejs=nodejs:8.17.0
+
+Status kubectl rollout status deployment/myapp-deploymnet
+       kubectl rollout history deployment/myapp-deployment
+
+Rollback kubectl rollout undo deployment/myapp-deployment
