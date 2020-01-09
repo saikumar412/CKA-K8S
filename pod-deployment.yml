@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: python-app
+spec:
+  template: 
+    metadata: 
+      name: python-app-pod
+      lables: 
+        type: web-app
+    spec: 
+      containers: 
+      - name: python-app-container
+        image: my-image
+        ports: 
+        - containerPort: 8081
+        volumeMounts:
+          - name: foo
+            mountPath: "/etc/foo"
+      volumes: 
+      - name: foo
+        secret: 
+          secretName: secret-name
+  replicas: 1
+  selector: 
+    matchLabels: 
+      type: web-app
+    
+
+        
+    
