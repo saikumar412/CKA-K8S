@@ -1,13 +1,14 @@
 kubectl drain node1 --ignore-daemonsets     
 kubectl uncordon node1
 
-upgrading the k8s master
+#upgrading the k8s master
+
 apt-get install kubeadm=1.17.x-00
 kubeadm upgrade apply v1.12.0
 apt-get install kubelet=1.17.x-00
 systemctl restart kubelet
 
-upgrading the k8s nodes
+#upgrading the k8s nodes
 
 apt-get install kubeadm=1.17.x-00
 apt-get install kubelet=1.17.x-00
