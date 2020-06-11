@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-var-config
+  namespace: env-develpment
+data:
+  nodeenv: env_develpment
